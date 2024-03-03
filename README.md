@@ -10,6 +10,7 @@
 
 ## Description  :bookmark_tabs:
 
+CyberMarket is a focused e-commerce platform designed to demystify the backend complexities of online retail. Building this proyect was pivotal for my learning because it aims to empower users with a deeper understanding of backend operations crucial for success in online business ventures. By harnessing technologies like Sequelize and MySQL2, CyberMarket offers tools tailored to empower users in managing their online store effortlessly. With the ability to create, update, and modify products, categories, and tags at their fingertips, users have unparalleled control over every aspect of their online storefront. Throughout the development of CyberMarket, I gained proficiency in various topics of database management, including recognizing different data types, understanding the associations methods, and employing alternative techniques for table creation.
 
 ## Installation :computer:
 
