@@ -15,38 +15,58 @@
 
 You are able to check this app by two ways:
 
- 1. If you want to check a video of the functionality of the app, you can go to this URL: https://drive.google.com/file/d/1IkUFSgyw0KmJJ_YRdgSe5gWlImhIEvTu/view 
+ 1. If you want to check a video of the functionality of the app, you can go to this URL: 
  2. If you want to try it yourself, you have run the code down below.
 
 ## Usage :bar_chart:
 
-If you want to try the app yourself make sure you have "Node.js" in your computer, and do not forget to run the next lines of code to start the app:
+You have to install the dependencies with the next code:
     
     npm i
 
- 
- ![Running the first code.](images/employee1.png)
+ ![Running the first code.](images/cybermarket1.png)
  ---
-After that run one of the next line:
+After that you have to create a ".env" file following the example:
 
-    npm start
-
- ![Running the next line.](images/employee2.png)
+ ![Creating the file.](images/cybermarket2.png)
  ---
-You will be prompted with a title of the app and a list of options to choose, after selecting the action you want to process, either it will show you right away like the next example: 
+Open a new terminal and log in to mySQL and run the next code, so we can create the database:
 
- ![Example of tables.](images/employee3.png)
- ---
-Or it will ask you a couple questios to finalize the request:
+    source db/schema.sql
 
- ![Running the next line.](images/employee4.png)
+ ![creating the data base.](images/cybermarket3.png)
  ---
-You can select "Quit" so the app will shut down.
+Now we have to seed data to the database:
+
+    npm run seed
+    
+    
+Now we start the server:
+
+    npm run watch
+    
+
+ ![the server is running.](images/cybermarket4.png)
+ ---
+And now we can test it with Imsomnia core, we can find all products, categories and tags; find anything by Id and also create, delete and update any of those:
+
+![example of the insomnia.](images/cybermarket5.png)
+ ---
+ ![example of the insomnia.](images/cybermarket6.png)
+ ---
+ ![example of the insomnia.](images/cybermarket7.png)
+ ---
 ## Credits :email:
 
 List of all the links that made me succeed this project:
-- https://dev.mysql.com/doc/refman/8.0/en/problems-with-null.html#:~:text=To%20look%20for%20NULL%20values,See%20Section%205.3.
-
+- https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
+- https://sequelize.org/docs/v7/models/data-types/
+- https://www.topcoder.com/thrive/articles/sequelize-validations-and-constraints
+- https://github.com/sequelize/sequelize/issues/8019
+- https://sequelize.org/docs/v6/core-concepts/model-basics/
+- https://sequelize.org/docs/v6/core-concepts/assocs/
+- https://learn.microsoft.com/en-us/sql/relational-databases/tables/create-foreign-key-relationships?view=sql-server-ver16
+- https://shields.io/badges
 
 ## License :memo:
 ---
